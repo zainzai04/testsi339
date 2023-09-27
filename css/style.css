@@ -156,7 +156,7 @@ first div in the grid  and place it in the grid. */
  four rows in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
-.about {
+/* .about {
   grid-column: 2 / span 1;
 }
 .method {
@@ -168,7 +168,7 @@ first div in the grid  and place it in the grid. */
 .contact {
   grid-column: 2 / span 1;
 }
-
+ */
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block {
   display: flex;
