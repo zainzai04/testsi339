@@ -156,7 +156,7 @@ first div in the grid  and place it in the grid. */
  four rows in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
-/* .about {
+.about {
   grid-column: 2 / span 1;
 }
 .method {
@@ -168,25 +168,42 @@ first div in the grid  and place it in the grid. */
 .contact {
   grid-column: 2 / span 1;
 }
- */
+
  /* Step 8: Write the selector/rule property to style the .text-block class. */
-/* .text-block {
+.text-block {
   display: flex;
   justify-content: center;
   align-items: center;
   max-height: 250px;
   border: 1px solid black;
-} */
+} 
 
 /* Add your media query here */
-
+@media screen and (max-width: 800px) {
 
   /* Step 9: Write the selector/rule property to style the nav element */
-
+  nav {
+    padding: 30px 0;
+    text-align: right;
+  }
  
   /* Step 10: Write the selector/rule property to update the .container class */
-
+  .container {
+    grid-template-columns: 50px auto 500px auto 50px;
+  }
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
+  .about,
+  .clients,
+  .method-image,
+  .contact-image {
+    grid-column: 3 / span 2;
+  }
+  .method,
+  .contact,
+  .about-image,
+  .clients-image {
+    grid-column: 2 / span 2;
+  }
 
-
+}
